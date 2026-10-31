@@ -1,0 +1,157 @@
+- Github
+- JS intro
+- JS Basics
+- Data Types
+- Operators
+- Loops
+- Functions
+- Arrays
+- Objects
+- DOM
+- Project
+- Video Suggestions
+- web3,http
+- Programming Server
+
+- npm run build(Explanation)
+
+- Deployment
+- VPS
+- DNS
+- Domain
+- SSL
+- Hosting
+- Explore Hosting
+
+- CRUD Operations
+- REST API
+- Postman
+- Express
+- Database
+- MongoDB
+- Model
+- Controller
+- Router
+- Notes on Express
+- Task with Express and MongoDB
+- Integration of Frontend and Backend
+- Integration Deployment
+- Authentication
+- JWT
+- Cookies
+- Server
+- Hashing
+- Encryption
+- Decryption
+- Project(with Auth and Frontend)
+- Deployment with VPS
+- How pm2 and nginx work together
+- Frontend and Backend Deployment with VPS
+- Only Backend Deployment with Render
+- Unknown Code Review
+- Blacklisting
+- Caching
+- Authorisation
+- Error Handling
+- Validator
+- Apply for internships
+- Email Verification(OAuth2)
+- Project (With Above)
+- Deployment with VPS
+- How to deploy multiple projects in a single VPS
+- Redux
+- Redux Toolkit
+- Redux with Extensions
+- Redux with React
+- Full Stack Project with Redux
+- Deployment with VPS
+- Github Mastering
+- Socket.IO
+    - Socket Events
+        - Connection + Disconnection
+        - socket.on + socket.emit
+        - io.emit
+        - socket.broadcast.emit
+    - Ack + Rooms + privateMessage
+        - Acknowledgement
+        - Rooms
+        - join + leave + room events
+        - io.to(room).emit
+        - socket.to(room).emit
+        - Private Message
+    - Namespaces + Namespace Events
+        - Chat Events
+        - Admin Events
+    - Middleware
+     - Socket Middleware
+     - Authorization Middleware
+    - Adapters
+    - Redis Adapter
+    - Client Socket Instance
+    - Client Events + Client Middleware
+    - Chat Architecture(Optional)
+- Project with Socket.IO
+- Deployment with VPS
+- GenAI
+- LLMs
+- Introduction to GenAI
+- Langchain
+- Langchain with GenAI
+- Langchain with React
+- Project with Langchain and GenAI
+- Deployment with VPS
+- Email Verification
+- Email Verification with GenAI(OAuth2)
+- Tools in GenAI
+- Project with GenAI Tools(ChatBot)
+- Chat Integration with GenAI
+- Ai message formatting
+- Integrate
+- RAG
+- How to convert a normal project to advanced project/Production Ready Product
+- Deployment with VPS
+- Execution & Pitfalls of Deployment
+- Development Approach for Production Ready Product
+- Typescript
+- Small Project with Typescript
+- Deployment with VPS
+- Langgraph
+- Project with Langraph
+- Deployment with VPS
+- Work On Open Source Projects and Unknown Code
+- Google OAuth
+- ECommerce Project with Google OAuth and Payment Integration Production Ready
+- Deployment with VPS
+- HelmetJS
+- Docker 
+- Docker with NodeJS
+- Docker with React
+- Docker Compose
+- Docker with Full Stack Project
+- Development with Docker
+- Docker Production Deployment
+- Collaborate with Other Developers
+- AWS
+- Different Services in AWS
+- How to use AWS Services
+- How it works
+- Deployment with AWS
+- Microservices
+- Microservices with NodeJS
+- Microservices with React
+- Microservices with Docker
+- Microservices with AWS
+- Microservices Architecture
+- Kuber 
+- Kubernetes
+- Project
+- Sandbox
+- AI Agents
+- Redis.RateLimting.Jest
+- Access and Refresh Tokens
+- NextJS
+- NextJS Project with TypeScript
+- NextJS Deployment with VPS
+- MCP Servers
+- PWA
+- Solidity
