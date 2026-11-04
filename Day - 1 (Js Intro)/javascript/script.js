@@ -50,26 +50,26 @@ var fa = 23;
 // null means on purpose no value, undefined means no value assigned yet
 // number -> any integer or decimal(float) number
 // sybol -> unique and immutable, used to create unique identifiers for objects
-let obj = {
-    uid: 1,
-    name: "Bruce Wayne",
-    age: 35,
-    email:"test@test.com"
-}
+// let obj = {
+//     uid: 1,
+//     name: "Bruce Wayne",
+//     age: 35,
+//     email:"test@test.com"
+// }
 
-let u1 = Symbol("uid");
-obj[u1] = 2;
+// let u1 = Symbol("uid");
+// obj[u1] = 2;
 
 // bigint -> use for large numbers, regular int is 9007199254740991
-let biga = 9007199254740991n;
-biga = biga + 10n;
+// let biga = 9007199254740991n;
+// biga = biga + 10n;
 // this was you can use values bigger than max int value.
 // abovee these were primitive values meaninng they are not references, they are stored in stack memory and are immutable.
 
 // REFERENCES -> these are reference values, so they are just references and not the actual values. so when u change both the reference and the original value will change.
-let ab = [1, 2, 3, 4, 5];
-let ba = ab;
-ba.pop();
+// let ab = [1, 2, 3, 4, 5];
+// let ba = ab;
+// ba.pop();
 // as we can see ab removed last idx value and so did ba as it was referenced.
 
 //Type coercion -> where one type gets converted automatically to another type.
@@ -99,18 +99,47 @@ ba.pop();
 // if and else if 
 // switch case
 
-function getGrade(score) {
-    if (score >= 90 && score <= 100) {
-        return "A"
-    }
+// function getGrade(score) {
+//     if (score >= 90 && score <= 100) {
+//         return "A"
+//     }
 
-    else if (score >= 80 && score <= 89) {
-        return "B"
-    }
+//     else if (score >= 80 && score <= 89) {
+//         return "B"
+//     }
 
-    else if (score >= 70 && score <= 79) {
-        return "C"
-    }
+//     else if (score >= 70 && score <= 79) {
+//         return "C"
+//     }
 
     
-}
+// }
+
+// LOOPS
+// for (let i = 1; i <= 25; i++) {
+//     console.log(i);
+// }
+
+// let ass = 10;
+
+// while (ass >= 1) {
+//     console.log("fuck you", ass);
+//     ass--;
+// }
+
+// let i = 1;
+
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 20); 
+
+// for (let i = 1; i <= 44; i++) {
+//     console.log(i);
+//     if (i == 32) {
+//         break;
+//         continue;
+//     }
+// }
+// console.log("out of loop and if")
+
