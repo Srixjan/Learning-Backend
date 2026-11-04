@@ -114,14 +114,4 @@
 // }
 
 
-// let bal = 1000;
-// for (let i = 0; i <= 3; i++) {
-//     let input = prompt("ENter  a withdrawl");
-//     if (isNaN(input)) {
-//         console.log("wrong input!");
-//     }
-
-    
-// }
-
 
