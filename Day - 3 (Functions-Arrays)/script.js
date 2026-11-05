@@ -107,3 +107,18 @@
 // console.log(person.name);
 // console.log(person.age);
 // console.log(person.city);
+
+
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.slice(0, 3);
+// console.log(newArr);
+
+
+let obj = {
+    name: "Panty"
+}
+
+const mc = JSON.parse(JSON.stringify(obj));
+
+console.log(mc)
