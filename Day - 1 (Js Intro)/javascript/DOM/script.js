@@ -62,3 +62,7 @@ h1Font.classList.add("style");
 // h1Font.classList.remove("style");
 
 //h1Font.classList.toggle("style"); <- even better turns on if off and vice versa
+
+
+// EVENTS AND EVENTS HANDLING
+
