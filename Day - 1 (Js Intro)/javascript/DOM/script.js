@@ -43,21 +43,21 @@
 
 // a.removeAttribute("href");
 
-let h1 = document.createElement("h1"); // -> Created an element
-h1.textContent = "Hello Srijan!"; // putting text in h1
-console.log(h1); // printing h1 in console
+// let h1 = document.createElement("h1"); // -> Created an element
+// h1.textContent = "Hello Srijan!"; // putting text in h1
+// console.log(h1); // printing h1 in console
 
 // document.body.prepend(h1);  -> h1 is placed before script.js
 // document.body.append(h1);  -> h1 is placed after script.js
 
-document.body.prepend(h1);
+// document.body.prepend(h1);
 
 // let h1Color = document.querySelector("h1");
 // h1Color.style.color = "green";
 // console.dir(h1Color);
 
-let h1Font = document.querySelector("h1");
-h1Font.classList.add("style");
+// let h1Font = document.querySelector("h1");
+// h1Font.classList.add("style");
 
 // h1Font.classList.remove("style");
 
@@ -66,3 +66,14 @@ h1Font.classList.add("style");
 
 // EVENTS AND EVENTS HANDLING
 
+let h1 = document.querySelector("h1");
+
+h1.addEventListener("click", function() {
+    h1.style.color = "red";
+}); 
+
+let p = document.querySelector("p");
+p.addEventListener("click", function() {
+    p.style.backgroundColor = "black";
+    p.style.color = "yellow";
+} );
