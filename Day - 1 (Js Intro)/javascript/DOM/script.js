@@ -72,8 +72,34 @@ h1.addEventListener("click", function() {
     h1.style.color = "red";
 }); 
 
-let p = document.querySelector("p");
-p.addEventListener("click", function() {
-    p.style.backgroundColor = "black";
-    p.style.color = "yellow";
+let batmanPara = document.querySelector("#batman");
+batmanPara.addEventListener("click", function() {
+    batmanPara.style.color = "yellow";
+    batmanPara.style.backgroundColor = "black";
+} );
+
+let supermanPara = document.querySelector("#superman");
+supermanPara.addEventListener("dblclick", function() {
+    supermanPara.style.color = "green";
+    supermanPara.style.backgroundColor = "red";
+} )
+
+// event.addEventListner("event name", function () {your function here })
+// -> p.addEventListener("dblclick", dblclick);
+// -> p.removeEventListener("dblclick", dblclick);
+// function dblclick() {p.style.color = "blue"};
+
+let input = document.querySelector("input");
+
+// input.addEventListener("input", function(rand) {
+//     if (rand.data != null) {
+//         console.log(rand.data);
+//     }
+// } );
+
+let sel = document.querySelector("select");
+let device = document.querySelector("#supes");
+
+sel.addEventListener("change", function(dets) {
+    device.textContent = `${dets.target.value} is Selected to protect your city!` 
 } );
