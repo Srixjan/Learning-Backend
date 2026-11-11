@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Kart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Shopping Kart</h1>
+
+        <section class="card">
+            <h2>Add your Items</h2>
+            <div>
+                <input type="text" id="productName" placeholder="Product Name" min="1">
+                <input type="text" id="productID" placeholder="Product ID">
+                <input type="text" id="productPrice" placeholder="Product Price" min="0.01" step="0.01">
+                <input type="number" id="productQuantity" placeholder="Quantity" min="1" step="1" value="1">
+                <button id="addProduction">Add Product</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Update Quantity</h2>
+            <div>
+                <input type="text" id="UpdateProductID" placeholder="Update Product ID">
+                <input type="text" id="UpdateQuantity" placeholder="Update Quantity">
+                <button id="UpdateQuantity">Update</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Cart Items</h2>
+            <button id="getCartBtn" class="secondary">Get Cart Items</button>
+            <ul id="cartItems"></ul>
+        </section>
+    </main>
+</body>
+</html>
