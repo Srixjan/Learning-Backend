@@ -44,14 +44,40 @@
 // console.log(square(5));
 
 
-function outer() {
-    let message = "Hello from outer";
-
-    function inner() {
-        console.log(message);
+function createBalance(initialBalance) {
+    if (typeof initialBalance !== "number" || initialBalance < 0 || !Number.isFinite(initialBalance)) {
+        throw new Error("Invalid Intial result");
     }
+    let balance = initialBalance;
+    return {
+        deposit(amount) {
+            if (!Number.isFinite(amount) || amount <= 0) {
+                return "Invalid Deposit Amount!";
+            }
 
-    inner();
+            balance += amount;
+            return `Deposited ${amount}, Balance = ${balance}`;
+        },
+        withdraw(amount) {
+            if (!Number.isFinite(amount) || amount <= 0) {
+                return "Invalid Withdrawl Amount";
+            }
+
+            if (amount > balance) {
+                return "Not enough Balance!"
+            }
+
+            balance -= amount;
+            return `Withdrawl ${amount}, Balance ${balance}`;
+        },
+
+        getBalance() {
+            return balance;
+        }
+    }
 }
 
-outer();
+const account = createBalance(5000)   
+console.log(account.deposit(1000)) 
+console.log(account.withdraw(1000))
+console.log(account.getBalance())
