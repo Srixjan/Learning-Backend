@@ -104,3 +104,53 @@
 // console.log(square(5))
 // console.log(square(10));
 // console.log(square(5));
+
+// function once(fn) {
+//     let executed = false;
+//     let result;
+
+//     return function (...args) {
+//         if (!executed) {
+//             result = fn.apply(this, args);
+//             executed = true;
+//         }
+
+//         return result;
+//     }
+// }
+
+// const intitialize = once(() => {
+//     console.log("Application Intialized!");
+//     return "SUCCESS";
+// } )
+
+// intitialize()
+// intitialize()
+// intitialize()
+// intitialize()
+// intitialize()   
+
+
+// function debounce(fn, delay) {
+//     let timer;
+
+//     return function(...args) {
+//         clearTimeout(timer);
+
+//         timer = setTimeout(() => {
+//             fn.apply(this, args);
+//         }, delay)
+//     }
+// }
+
+
+// const search = debounce((query) => {
+//     console.log("Searching:", query);
+// }, 500);
+
+// search("J");
+// search("Ja");
+// search("Java");
+// search("JavaScript");
+
+
