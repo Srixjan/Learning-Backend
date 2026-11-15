@@ -154,3 +154,29 @@
 // search("JavaScript");
 
 
+
+// function groupBy(array, key) {
+//     const result = [];
+
+//     for (const item in array) {
+//         const groupName = item[key];
+
+//         if(!Object.hasOwn(result, groupName)) {
+//             result[groupName] = [];
+//         }
+        
+//         result[groupName].push(item);
+//     }
+// }
+
+// const employees = [
+//     { name: "Amit", department: "IT" },
+//     { name: "Rahul", department: "HR" },
+//     { name: "Priya", department: "IT" },
+//     { name: "Neha", department: "Finance" },
+//     { name: "Rohan", department: "HR" }
+// ];
+
+// groupBy(employees, "department")
+
+
