@@ -116,4 +116,29 @@ function createShoppingCart() {
     }
 }
 
-const shoppingCart = createShoppingCart();
+// logic created
+
+
+const shoppingCart = createShoppingCart(); // shopping cart instance created
+
+const productId = document.getElementById("productId");
+const productName = document.getElementById("productName");
+const productPrice = document.getElementById("productPrice");
+const productQuantity = document.getElementById("productQuantity");
+
+// const addProductionBtn = document.getElementById("addProduction");
+const updateProductId = document.getElementById("updateProductId");
+const updateProductQuantity = document.getElementById("updateProductQuantity");
+// const updateQuantityBtn = document.getElementById("updateQuantity")
+
+// const getCartBtn = document.getElementById("getCartBtn");
+
+const removeProductid = document.getElementById("removeProductId");
+// const removeProductBtn = document.getElementById("removeProductBtn");
+
+const cartItems = document.getElementById("cartItems");
+
+const cartTotal = document.getElementById("cartTotal");
+
+const messageElement = document.getElementById("message");
+

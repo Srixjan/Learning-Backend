@@ -24,9 +24,17 @@
         <section class="card">
             <h2>Update Quantity</h2>
             <div>
-                <input type="text" id="UpdateProductID" placeholder="Update Product ID">
-                <input type="text" id="UpdateQuantity" placeholder="Update Quantity">
-                <button id="UpdateQuantity">Update</button>
+                <input type="text" id="updateProductId" placeholder="Update Product ID">
+                <input type="text" id="updateQuantity" placeholder="Update Quantity">
+                <button id="updateQuantity">Update</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Remove Items</h2>
+            <div>
+                <input type="number" id="removeProductId" placeholder="Product Id" min="1">
+                <button id="removeProductBtn" class="danger">Remove Product</button>
             </div>
         </section>
 
@@ -46,6 +54,8 @@
             <h2>Clear Cart</h2>
             <button id="clearCarBtn" class="danger">Clear cart</button>
         </section>
+
+        <p id="message" aria-live="polite"></p>
     </main>
     <script src="script.js" defer></script>
 </body>
