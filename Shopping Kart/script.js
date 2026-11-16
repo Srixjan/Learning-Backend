@@ -121,24 +121,132 @@ function createShoppingCart() {
 
 const shoppingCart = createShoppingCart(); // shopping cart instance created
 
-const productId = document.getElementById("productId");
-const productName = document.getElementById("productName");
-const productPrice = document.getElementById("productPrice");
-const productQuantity = document.getElementById("productQuantity");
+const productIdInput = document.getElementById("productId");
+const productNameInput = document.getElementById("productName");
+const productPriceInput = document.getElementById("productPrice");
+const productQuantityInput = document.getElementById("productQuantity");
 
 // const addProductionBtn = document.getElementById("addProduction");
-const updateProductId = document.getElementById("updateProductId");
-const updateProductQuantity = document.getElementById("updateProductQuantity");
+const updateProductIdInput = document.getElementById("updateProductId");
+const updateProductQuantityInput = document.getElementById("updateProductQuantity");
 // const updateQuantityBtn = document.getElementById("updateQuantity")
 
 // const getCartBtn = document.getElementById("getCartBtn");
 
-const removeProductid = document.getElementById("removeProductId");
+const removeProductidInput = document.getElementById("removeProductId");
 // const removeProductBtn = document.getElementById("removeProductBtn");
 
-const cartItems = document.getElementById("cartItems");
+const cartItemsContainer = document.getElementById("cartItems");
 
-const cartTotal = document.getElementById("cartTotal");
+const cartTotalElement = document.getElementById("cartTotal");
 
 const messageElement = document.getElementById("message");
 
+function renderCartItems() {
+    const items = shoppingCart.getCartItems();
+
+    cartItemsContainer.replaceChildren();
+
+    if (items === 0) {
+        const empyMessage = document.createElement("li");
+        empyMessage.textContent = "You cart is empty!"
+        cartItemsContainer.appendChild(empyMessage);
+        return;
+    }
+
+    items.forEach(product => {
+        const li = document.createElement("li");
+        li.textContent = `
+        ID: ${product.id} ||
+        Name: ${product.name} ||
+        Price: ${product.price.toFixed(2)} ||
+        Quantity: ${product.quantity} ||
+        Subtotal: ${(product.price * product*quantity).toFixed(2)}
+        
+        `;
+
+        cartItemsContainer.appendChild(li);
+    })
+}
+
+function renderTotal () {
+    const total = shoppingCart.getCartTotal();
+
+    cartTotalElement.textContent = `Total: ₹${total.toFixed(2)}`
+}
+
+document.getElementById("addProductionBtn").addEventListener("click", () => {
+    const product = {
+        id: Number(productIdInput.value),
+        name: productNameInput.value,
+        price: Number(productPriceInput.value),
+        quantity: Number(productQuantityInput.value)
+    }
+
+    const result = shoppingCart.addProduct(product);
+
+    showMessage(result.message);
+
+    console.log(result.message);
+
+    if(result.success) {
+        renderCartItems();
+        renderTotal();
+
+        productIdInput.value = "";
+        productNameInput.value = "";
+        productPriceInput.value = "";
+        productQuantityInput.value = "1";
+    }
+})
+
+document.getElementById("removeProductBtn").addEventListener("click", () => {
+    const productId = Number(removeProductidInput.value);
+    const result = shoppingCart.removeProduct(productId);
+
+    showMessage(result.message);
+
+    if(result.success) {
+        renderCartItems();
+        renderTotal();
+
+        removeProductidInput = "";
+    }
+})
+
+document.getElementById("updateQuantity").addEventListener("click", () => {
+    const productId = Number(updateProductIdInput.value);
+    const quanity = Numver(updateProductQuantityInput.value);
+
+    const result = shoppingCart.updateQuantity(productId, quanity);
+
+    showMessage(result.message);
+
+    if (result.success) {
+        renderCartItems();
+        renderTotal();
+
+        updateProductIdInput.value = "";
+        updateProductQuantityInput.value = "";
+    }
+})
+
+document.getElementById("getCartBtn").addEventListener("click", () => {
+    renderCartItems();
+
+    showMessage("Cart items displayed");
+})
+
+document.getElementById("getTotalBtn").addEventListener("click", () => {
+    renderTotal();
+    showMessage("Cart total Calculated")
+})
+
+document.getElementById("clearCartBtn").addEventListener("click", () => {
+    const result = shoppingCart.clearCart();
+
+    renderCartItems();
+    renderTotal();
+
+    showMessage(result.message);
+})
