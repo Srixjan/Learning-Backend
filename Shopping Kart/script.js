@@ -142,6 +142,10 @@ const cartTotalElement = document.getElementById("cartTotal");
 
 const messageElement = document.getElementById("message");
 
+function showMessage(message) {
+    messageElement.textContent = message;
+}
+
 function renderCartItems() {
     const items = shoppingCart.getCartItems();
 
@@ -161,7 +165,7 @@ function renderCartItems() {
         Name: ${product.name} ||
         Price: ${product.price.toFixed(2)} ||
         Quantity: ${product.quantity} ||
-        Subtotal: ${(product.price * product*quantity).toFixed(2)}
+        Subtotal: ${(product.price * product.quantity).toFixed(2)}
         
         `;
 
@@ -175,7 +179,7 @@ function renderTotal () {
     cartTotalElement.textContent = `Total: ₹${total.toFixed(2)}`
 }
 
-document.getElementById("addProductionBtn").addEventListener("click", () => {
+document.getElementById("addProduction").addEventListener("click", () => {
     const product = {
         id: Number(productIdInput.value),
         name: productNameInput.value,
@@ -216,7 +220,7 @@ document.getElementById("removeProductBtn").addEventListener("click", () => {
 
 document.getElementById("updateQuantity").addEventListener("click", () => {
     const productId = Number(updateProductIdInput.value);
-    const quanity = Numver(updateProductQuantityInput.value);
+    const quanity = Number(updateProductQuantityInput.value);
 
     const result = shoppingCart.updateQuantity(productId, quanity);
 
