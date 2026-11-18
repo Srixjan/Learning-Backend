@@ -179,6 +179,40 @@
 
 // groupBy(employees, "department")
 
-function deepClone(value, seen = new WeakMap()) {
-    
-}
+// function deepClone(value, seen = new WeakMap()) {
+//     if (value === null || typeof value !== "object") {
+//         return value;
+//     }
+
+//     if (seen.has(value)) {
+//         return seen.get(value);
+//     }
+
+//     const clone = Array.isArray(value) ? [] : {};
+//     seen.set(value, clone);
+
+//     for (const key of Reflect.ownKeys(value)) {
+//         clone[key] = deepClone(value[key], seen);
+//     }
+
+//     return clone;
+// }
+
+
+// const user = {
+//     name: "Ramiz",
+//     address: {
+//         city: "Kolkata",
+//         country: "India"
+//     },
+//     skills: ["JavaScript", "React"]
+// };
+
+// const clonedUser = deepClone(user);
+
+// clonedUser.address.city = "Delhi";
+// clonedUser.skills.push("Node.js")
+
+// console.log("clonedUser: ", clonedUser)
+// console.log("user: ", user)
+
