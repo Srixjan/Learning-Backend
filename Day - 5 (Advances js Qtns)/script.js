@@ -143,3 +143,31 @@
 
 // const users = transformUsers(response);
 // console.log(users);
+
+
+const numbers = [10, 20, 40, 30, 40, 50, 50];
+
+function secondLargestUnique(nums) {
+    if (nums.length < 2) {
+        return -1;
+    }
+
+    let largest = -1;
+    let slargest = -1;
+
+    for (let i = 0; i < nums.length; i++) {
+        if(nums[i] > largest) {
+            slargest = largest;
+            largest = nums[i]
+        } 
+
+        else if(nums[i] > slargest && nums[i] !== largest) {
+            slargest = nums[i];
+        }
+    }
+
+    return slargest == -1 ? -1 : slargest;
+}
+
+const secondLargest = secondLargestUnique(numbers);
+console.log(secondLargest);
