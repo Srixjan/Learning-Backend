@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Day 6: CSS Foundations</h1>
+        <section class="lab-card" id="lab-selectors">
+            <h2>Selectors &amp; Specificity</h2>
+            <p class="description">Standard description text!</p>
+            <p id="highligthed" class="description">Highlighted text with class and id</p>
+
+            <div class="badge-container">
+                <span class="tag">Direct Child Tag</span>
+                <div>
+                    <span child="tag">Nested Child Tag</span>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="action-btn">Active Button</button>
+                <button type="button" class="action-btn" disabled>Disabled Button</button>
+            </div>
+        </section>
+
+        <section class="lab-card" id="lab-boxmodel">
+            <h2>Box Model</h2>
+            <div class="box-target">Box Sizing Target</div>
+            <div class="margin-demo-1">Top Element (Margin Bottom: 30px)</div>
+            <div class="margin-demo-2">Bottom Element (Margin Top: 20px)</div>
+        </section>
+
+        <section class="lab-card" id="lab-positioning">
+            <h2>Display and Positioning</h2>
+            <div class="display-demo">
+                <span class="inline-span">Inline Span</span>
+                <span class="inline-block-span">Inline-Block Span</span>
+            </div>
+            <div class="relative-parent">
+                <span>Parent (position: relative)</span>
+                <div class="absolute-badge">Badge (position: absolute)</div>
+            </div>
+        </section>
+
+        <section class="lab-card" id="lab-topography">
+            <h2>Units and Typography</h2>
+            <p clas="rem-text">This text is 1.25rem (20px when root is 16px)</p>
+
+            <div class="em parent">
+                Parent Font Size: 20px
+                <p class="em-child">Child Text with 1.2em (20px)</p>
+            </div>
+
+            <h3>Text Truncation Demo</h3>
+            <div class="truncate-box">
+                This is an exceptionally long string of text designed to test how single-line CSS truncation gracefully handles overflow.
+            </div>
+        </section>
+    </main>
+</body>
+</html>

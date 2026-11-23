@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ut, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+}
+
+.page-container {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.lab-card {
+    background: #ffff;
+    border: 1px solid #cbdfe1;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: #0f172a;
+    color:#ffff;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap:20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: #ffffffff;
+}
+
+.cta-btn {
+    background-color: #2563eb;
+    color: #ffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-row {
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+    margin-top: 12px;
+}
+
+.flex-card {
+    background-color: #f1f5f9;
+    border:  1px solid #e2e850;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-grow-card {
+    flex: 1;
+}
+
+.card-btn {
+    margin-top: 12px;
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Systesms - Flexbox & CSS Grids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page-container">
+        <section class="lab-card" id="lab-flexbox">
+            <h2>1. Flexbox Alignment Labs</h2>
+
+            <h3>A. Navigation Bar (Space-Between)</h3>
+            <header class="navbar">
+                <div class="logo">BrandLogo</div>
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                </nav>
+                <button class="cta-btn" type="button">Sign In</button>
+            </header>
+
+            <h3>B. Card Layout with Flexible Growing Content</h3>
+            <div class="card-row">
+                <article class="flex-card">
+                    <h4>Short Title</h4>
+                    <p>Basic description text.</p>
+                    <button class="card-btn" type="button">Action</button>
+                </article>
+
+                <article class="flex-card flex-grow-card">
+                    <h4>Flex-Grow Card</h4>
+                    <p>This card has <code>flex: 1</code> applied, so it grows to absorb all available remaining space
+                        in the container row.</p>
+                    <button class="card-btn" type="button">Action</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="lab-card" id="lab-grid">
+  <h2>2. CSS Grid Labs</h2>
+
+  <h3>A. Fixed 3-Column Grid</h3>
+  <div class="grid-fixed">
+    <div class="grid-item">Column 1</div>
+    <div class="grid-item">Column 2</div>
+    <div class="grid-item">Column 3</div>
+  </div>
+
+  <h3>B. Responsive Auto-Fit Grid (Resize Window!)</h3>
+  <div class="grid-autofit">
+    <div class="grid-card">Card A</div>
+    <div class="grid-card">Card B</div>
+    <div class="grid-card">Card C</div>
+    <div class="grid-card">Card D</div>
+  </div>
+
+  <h3>C. Dashboard Layout with Spanning</h3>
+  <div class="dashboard-grid">
+    <header class="dash-header">Header (Spans 12 Cols)</header>
+    <aside class="dash-sidebar">Sidebar (Spans 3 Cols)</aside>
+    <main class="dash-content">Main Content Area (Spans 9 Cols)</main>
+  </div>
+</section>
+    </main>
+</body>
+
+</html>

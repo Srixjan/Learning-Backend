@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    color: #1e293b;
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lesson-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0 24px;
+}
+
+.lesson-nav a {
+    color: #1d4ed8;
+}
+
+.lab-card {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Selectors and specificity */
+.description {
+    color: blue;
+    font-weight: 500;
+}
+
+#highligthed {
+    color: red;
+}
+
+.action-btn {
+    margin-top: 1px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: yellow;
+    background-color: black;
+    cursor: pointer;
+}
+
+.action-btn:hover:not(:disabled) {
+    background-color: #724e4e;
+}
+
+.action-btn:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+.action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Box model */
+.box-target {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid lightblue;
+    background-color: goldenrod;
+}
+
+.margin-demo-1 {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fef3cf;
+}
+
+.margin-demo-2 {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fde68a;
+}
+
+/* Display and positioning */
+.display-demo {
+    margin-bottom: 20px;
+}
+
+.inline-span {
+    background-color: #fed7aa;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+}
+
+.inline-block-span {
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    background-color: #fdba74;
+    text-align: center;
+}
+
+.relative-parent {
+    position: relative;
+    padding: 30px 15px 15px;
+    border: 2px dashed #94a3b8;
+    border-radius: 6px;
+    background-color: #f1f5f9;
+}
+
+.absolute-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 2px 10px;
+    border-radius: 12px;
+    color: white;
+    background-color: #ef4444;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* Units, typography, and truncation */
+html {
+    font-size: 16px;
+}
+
+.rem-text {
+    font-size: 1.25;
+    line-height: 1.5;
+    color: #334155
+}
+
+em-parent {
+    font-size: 20px;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-left: 4px solid #6366f1
+}
+
+.em-child {
+    font-size: 1.2em;
+    color: #4338ca;
+    margin: 4px 0 0 0;   
+}
+
+.truncate-box {
+    max-width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+}
