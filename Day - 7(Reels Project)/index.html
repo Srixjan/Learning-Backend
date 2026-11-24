@@ -8,7 +8,27 @@
 </head>
 <body>
     <main class="reels-container" id="reelsContainer">
-        
+        <video src="${reel.video}" 
+        loop
+        playsinline
+        preload="metadata">
+    </video>
+
+    <button class="mute-btn" >🔊</button>
+    <div class="play-indicator">▶</div>
+    <div class="reel-info">
+        <div class="username">@${reel.username}</div>
+        <div class="caption">@${reel.caption}</div>
+    </div>
+
+    <div class="reel-actions">
+        <div class="action">
+            <button class="like-btn">❤️</button>
+            <span class="like-count">
+                ${reel.likes}
+            </span>
+        </div>
+    </div>
     </main>
     <script src="script.js"></script>
 </body>
