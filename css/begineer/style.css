@@ -1,0 +1,44 @@
+/* h1 {
+    color: firebrick;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+div {
+    background-color: rgb(212, 192, 15);
+    color: ;
+    height: 150px;
+    width: 500px;
+    border: 3px solid teal;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 1px 2px 3px 4px;
+
+}
+ */
+/* 
+ h1 {
+    background-color: purple;
+ }
+
+ h2 {
+    display: block  ;
+    background-color: purple;
+ } */
+
+
+ div {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    transition: margin-top 2s ease-in 0.1s;
+    margin: 0 auto;
+    margin-top: 10px;
+ }
+
+div:hover {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: 400px;
+}
