@@ -1,0 +1,75 @@
+/* 1. Global Design Tokens (Root Variables) */
+:root {
+  /* Color Palette */
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --border-color: #cbd5e1;
+
+  /* Spacing Tokens */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+
+  /* Typography & Effects */
+  --radius-main: 8px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme Overrides */
+.theme-dark {
+  --bg-page: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --border-color: #334155;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Applying Variables */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+}
+
+.page-container {
+  max-width: 900px;
+  margin: var(--space-lg) auto;
+  padding: 0 var(--space-md);
+}
+
+.lab-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-main);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-preview-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: var(--space-md);
+  border-radius: var(--radius-main);
+}
+
+.theme-preview-card p {
+  color: var(--text-muted);
+}
+
+.theme-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 4px;
+  cursor: pointer;
+}
